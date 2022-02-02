@@ -1,0 +1,318 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+    font-family: Roboto, sans-serif;
+    padding-bottom: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+}
+
+ul, ol {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+    font-family: Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+
+.container{
+    font-family: sans-serif;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+main{
+    background: white;
+    grid-area: main;
+    font-size: large;
+    color: black;
+    text-align: center;
+}
+
+#sidebar2{
+    background: #9DD1F1;
+    grid-area: sidebar2;
+}
+
+#sidebar1{
+    background: #9DD1F1;
+    grid-area: sidebar1;
+}
+
+.footer{
+    background-color:#000000ba;
+    color: #FFF;
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+}
+.footer ul{
+    list-style-type: none;
+    font-size: 0.8rem;
+}
+footer i{
+    margin-right: 0.15rem;
+}
+.footerSocial i{
+    color: #FFFFFF;
+}
+.footerSocial{
+    padding-right: 0.2rem;
+}
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: horizontal;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+}
+.logo{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    padding: 5px 5px 5px 10px;
+    background-color: #E5E7E6;
+}
+.logo h1{
+   text-align: center;
+}
+.logo img{
+    display:flex;
+    max-width: 80%;
+}
+.navMenu{
+    background-color: #a90037;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+.navMenu ul{
+    list-style-type: none;
+    display: flex;
+    margin: 2px 0;
+}
+
+.navMenu a{
+    color: #ffd601;
+    padding: 8px 9px;
+    font-size: 0.8rem;
+}
+
+main {
+    background: white;
+    grid-area: main;
+    font-size: large;
+    color: black;
+}
+
+#sidebar2 {
+    background: lightgray;
+    grid-area: sidebar2;
+}
+
+#sidebar1 {
+    background: lightgray;
+    grid-area: sidebar1;
+}
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+
+
+
+    footer {
+        background: #83B5D1;
+        grid-area: footer;
+    }
+
+    .container {
+        display: grid;
+        height: 150vh;
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .4fr 1.5fr 1222fr .5fr;
+        grid-template-areas:
+           "nav nav nav nav"
+           "sidebar1 main main sidebar2"
+           "sidebar1 main main sidebar2"
+           "footer footer footer footer";
+    }
+
+    .info1 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .titel2 {
+        font-size: 1.1rem;
+    }
+
+    .info2 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .titel3 {
+        font-size: 1.1rem;
+    }
+
+    .undertekst {
+        font-size: 1rem;
+    }
+
+    .img1 {
+        width: 1000px;
+        height: 400px;
+
+    }
+    .logo h1{
+        margin-right: 30px;
+        font-size: 2.5rem;
+
+    }
+    .logo img{
+        display:flex;
+        margin-left: 10px;
+    }
+    .navMenu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #FFF;
+        width: 100%;
+        height: 70px;
+        padding: 0 20px;
+    }
+    .navMenu a{
+        display: flex;
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-size: 1.3rem;
+
+    }
+
+    .footer{
+        grid-area: footer;
+        position: fixed;
+        bottom: 0;
+        padding: 5px 10px;
+    }
+    .footer ul{
+        list-style-type: none;
+        font-size: 0.8rem;
+    }
+    .footer li{
+        list-style-type: none;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding-left: 0.8rem;
+    }
+    footer i{
+        margin-right: 0.3rem;
+    }
+    .footerSocial i{
+        color: white;
+        padding-right: 0.5rem;
+    }
+    .footerSocial{
+        padding-right: 0.8rem;
+    }
+}
+
+
+@media screen and(min-width: 1200px) {
+    .navMenu a{
+        font-size: 2rem;
+        display: flex;
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+    .navMenu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #FFF;
+        width: 100%;
+        height: 70px;
+        padding: 0 20px;
+
+    }
+
+    .footer{
+        grid-area: footer;
+        position: fixed;
+        bottom: 0;
+        padding: 5px 10px;
+    }
+    .footer ul{
+        list-style-type: none;
+        font-size: 0.8rem;
+    }
+    .footer li{
+        list-style-type: none;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding-left: 0.8rem;
+    }
+    footer i{
+        margin-right: 0.3rem;
+    }
+    .footerSocial i{
+        color: #FFFFFF;
+        padding-right: 0.5rem;
+    }
+    .footerSocial{
+        padding-right: 0.8rem;
+    }
+}
+

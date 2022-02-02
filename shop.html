@@ -1,0 +1,115 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Shop</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <!--linket til ikone-->
+    <script src="https://kit.fontawesome.com/6e96c3bdd8.js" crossorigin="anonymous"></script>
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styleskontakt.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<!-- Her skal sidens indhold ligge -->
+<!--logo billede-->
+<header class="logo">
+    <!--link til forside-->
+    <a href="index.html"><img src="images/aaaaboldtlogo.png" alt="Klublogo"></a>
+    <h1>Zealand Håndbold Klub</h1>
+</header>
+<!--navigationsmenu-->
+<nav class="navMenu">
+<br>
+    <ul>
+        <li><a href="index.html" >Forside</a></li>
+        <li><a href="blivmedlem.html" class="active">Tilmelding</a></li>
+        <li><a href="holdtider.html">Hold</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+
+    </ul>
+    <ul>
+        <li> <a href="kort.html" class='fas fa-shopping-basket'></a></li>
+    </ul>
+</nav>
+<!-- produkter i shop-->
+<div class="far">
+    <div class="børn">
+        <img class="bill" src="images/received_275659567606972.png" alt="1">
+        <div>
+            <p class="skrift">Hoodies</p>
+            <p class="skrift"> 500 kr.</p>
+        </div>
+        <!--læg i kurven knap-->
+        <a class="knp" href="kort.html">Læg i kurven</a>
+    </div>
+    <div class="børn">
+        <img class="bill" src="images/received_597045997993093.png" alt="2">
+        <div>
+            <p class="skrift">Hoodies</p>
+            <p class="skrift"> 500 kr.</p>
+        </div>
+        <!--læg i kurven knap-->
+        <a class="knp" href="kort.html">Læg i kurven</a>
+    </div>
+    <div class="børn">
+        <img class="bill" src="images/received_1044185013066074.png" alt="3">
+        <div>
+            <p class="skrift">Hoodies</p>
+            <p class="skrift"> 500 kr.</p>
+        </div>
+        <!--læg i kurven knap-->
+        <a class="knp" href="kort.html">Læg i kurven</a>
+    </div>
+    <div class="børn">
+        <img class="bill" src="images/Untitled-2.png" alt="4">
+        <div>
+            <p class="skrift">Håndbold</p>
+            <p class="skrift"> 500 kr.</p>
+
+        </div>
+        <!--læg i kurven knap-->
+        <a class="knp" href="kort.html">Læg i kurven</a>
+
+
+</div>
+
+
+    <!-- her er footer-->
+<footer class="footer">
+    <div class="footerContact">
+        <ul>
+            <!--telefonnummer med link og mail med link-->
+            <li><i class="fas fa-phone-square-alt"></i><a href="tel:55555555">55 55 55 55</a></li>
+            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRCfHTvVhcwTclHMMrcztNJGRgkfzLSJGfRWCtfNrBkXrLxdXnBsSRMXldZLfDNQxtBCQg"></a><i class="fas fa-envelope"></i><a href="mailto:håndbold@zealand.dk">håndbold@zealand.dk</a></li>
+        </ul>
+    </div>
+    <!--sociale medier fecebook og instagram-->
+    <div class="footerSocial">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+    </div>
+</footer>
+
+</div>
+
+</body>
+</html>

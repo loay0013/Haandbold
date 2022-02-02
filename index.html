@@ -1,0 +1,107 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>ZHBK</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="MSP" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+   <!--linket til ikone-->
+    <script src="https://kit.fontawesome.com/6e96c3bdd8.js" crossorigin="anonymous"></script>
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+    <div class="grid">
+        <!--logo billede-->
+        <header class="logo">
+            <!--link til forside-->
+            <a href="index.html"><img src="images/aaaaboldtlogo.png" alt="Klublogo"></a>
+
+            <h1>Zealand Håndbold Klub</h1>
+        </header>
+        <!--navigationsmenu-->
+        <nav class="navMenu">
+            <ul>
+                <li><a href="index.html"  class="active">Forside</a></li>
+                <li><a href="blivmedlem.html">Tilmelding</a></li>
+                <li><a href="holdtider.html">Hold</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="content">
+                <a href="Übenthus.html" target="_blank" class="btn">Kom til åben træningsdag</a>
+            </div>
+        </div>
+        <div class="catchyFrase"><h2 >Kondition - Styrke - Samarbejde</h2></div>
+        <div class="firstSub">
+            <h3 class="subHead">Stadig i tvivl?</h3>
+            <p class="subP">Få en gratis prøve træning.</p>
+            <p class="subP">Kontakt os <strong><a class="link" href="kontakt.html" target="_blank">her</a></strong></p>
+        </div>
+        <div class="secondSub">
+            <h3 class="subHead">Hold</h3>
+            <p class="subP">Vi har hold for alle aldre.</p>
+            <p class="subP">Læs om hold og priser <strong><a class="link" href="holdtider.html" target="_blank">her</a></strong></p>
+        </div>
+        <div class="thirdSub">
+            <h3 class="subHead">Program</h3>
+            <p class="subP">Kampe og arrangementer</p>
+            <p class="subP">Programmet finder du <strong><a class="link" href="program.html" target="_blank">her</a></strong></p>
+        </div>
+        <div class="map">
+                <a href="https://www.google.com/maps/place/Bispegade+5,+4800+Nyk%C3%B8bing+Falster/@54.7648834,11.8777562,17z/data=!3m1!4b1!4m5!3m4!1s0x47ad305a7e21373f:0x6d6316b4fff43d93!8m2!3d54.7648803!4d11.8799449" target="_blank"></a>
+        </div>
+
+        <div class="nyhed">
+            <h3>Tilmeld dig vores nyhedsbrev</h3>
+            <p>
+                Tilmeld dig vores nyhedsbrev og modtag de seneste nyheder fra Håndboldklubben direkte i din indbakke.
+            </p>
+            <div class="labelinput">
+                <div>
+                    <label for="mail">Email</label>
+                    <input id="mail" name="email" type="email" placeholder="email">
+
+                </div>
+                <a href="tilmedle.html" target="_blank" class="btn1">
+                  Tilmeld
+                </a>
+            </div>
+        </div>
+
+        <!-- her er footer-->
+        <footer class="footer">
+            <div class="footerContact">
+                <ul>
+                    <!--telefonnummer med link og mail med link-->
+                    <li><i class="fas fa-phone-square-alt"></i><a href="tel:55555555">55 55 55 55</a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRCfHTvVhcwTclHMMrcztNJGRgkfzLSJGfRWCtfNrBkXrLxdXnBsSRMXldZLfDNQxtBCQg"></a><i class="fas fa-envelope"></i><a href="mailto:håndbold@zealand.dk" target="_blank">håndbold@zealand.dk</a></li>
+                </ul>
+            </div>
+            <div class="footerSocial">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

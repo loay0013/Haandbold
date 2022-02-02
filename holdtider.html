@@ -1,0 +1,122 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Træningstider</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <script src="https://kit.fontawesome.com/6e96c3bdd8.js" crossorigin="anonymous"></script>
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styleshold.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<!-- Her skal sidens indhold ligge -->
+<header class="logo">
+    <a href="index.html"><img src="images/aaaaboldtlogo.png" alt="Håndboldicon"></a>
+    <h1>Zealand Håndbold Klub</h1>
+</header>
+<nav class="navMenu"> <!-- Navigationsmenu med de forskellige sider -->
+    <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="blivmedlem.html">Tilmelding</a></li>
+        <li><a href="holdtider.html" class="active">Hold</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<div class="grid"> <!-- Grid med holdene samt overskrifter og tekst -->
+
+
+    <div id="kidtraining">
+        <img src="images/hondboldtehold.png" alt="kidtraining">
+    </div>
+
+    <div id="U12">
+        <h2>U12</h2>
+        <p> U12 Drenge træner mellem <span>16:30-17:30</span> <br>
+            <br>
+            U12 Piger træner mellem <span>17:30-18:30</span> <br>
+            <br>
+            Træningen foregår om Mandagen
+        </p>
+
+    </div>
+
+    <div id="U16">
+        <h2>U16</h2>
+        <p> U16 Piger træner mellem <span>16:30-17:30</span> <br>
+            <br>
+            U16 Drenge træner mellem <span>17:30-18:30</span> <br>
+            <br>
+            Træning foregår om Fredagen
+        </p>
+    </div>
+
+    <div id="U13">
+        <h2>U13</h2>
+        <p> U13 Piger træner mellem <span>15:30-16:30</span> <br>
+            <br>
+            U13 Drenge træner mellem <span>16:30-17:30</span> <br>
+            <br>
+            Træning foregår om Tirsdagen
+        </p>
+
+    </div>
+
+    <div id="U14">
+        <h2>U14</h2>
+        <p> U14 Piger træner mellem <span>16:30-17:30</span> <br>
+            <br>
+            U14 Drenge træner mellem <span>17:30-18-30</span> <br>
+            <br>
+            Træning foregår om Onsdagen
+        </p>
+    </div>
+
+    <div id="U15">
+        <h2>U15</h2>
+        <p> U15 Piger træner mellem <span>16:30-17:30</span> <br>
+            <br>
+            U15 Drenge træner mellem <span>17:30-18:30</span> <br>
+            <br>
+            Træning foregår om Torsdagen
+        </p>
+
+    </div>
+
+
+</div>
+<!-- Footeren med TLF og email -->
+<footer class="footer">
+    <div class="footerContact">
+        <ul>
+            <li><i class="fas fa-phone-square-alt"></i>55 55 55 55</li>
+            <li><i class="fas fa-envelope"></i>håndbold@zealand.dk</li>
+        </ul>
+    </div>
+    <div class="footerSocial">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+    </div>
+</footer>
+</body>
+</html>

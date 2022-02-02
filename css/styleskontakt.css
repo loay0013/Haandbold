@@ -1,0 +1,438 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+    font-family: Roboto, sans-serif;
+    padding-bottom: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+}
+
+ul, ol {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+    font-family: Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+.footer{
+    background-color:#000000ba;
+    color: #FFF;
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+}
+.footer ul{
+    list-style-type: none;
+    font-size: 0.8rem;
+}
+footer i{
+    margin-right: 0.15rem;
+}
+.footerSocial i{
+    color: #FFFFFF;
+}
+.footerSocial{
+    padding-right: 0.2rem;
+}
+.logo{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    padding: 5px 5px 5px 10px;
+    background-color: #E5E7E6;
+}
+.logo h1{
+    text-align: center;
+}
+.logo img{
+    display:flex;
+    max-width: 80%;
+}
+.navMenu{
+    background-color: #a90037;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+    text-decoration: none;
+}
+.navMenu ul{
+    list-style-type: none;
+    display: flex;
+    margin: 2px 0;
+}
+
+.navMenu a{
+    color: #ffd601;
+    padding: 8px 9px;
+    font-size: 0.8rem;
+}
+
+
+.kon{
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.kontakt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+.labelInput{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    margin: 2px;
+}
+.labelInput input{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+
+}
+a:link{
+    color: white;
+}
+
+.far{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:white;
+}
+.børn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    margin: 20px;
+    width: auto;
+    height: 50%;
+}
+.skrift{
+    text-align: center;
+}
+.knp{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+
+.fa-shopping-basket{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+
+.col-75 {
+    padding: 0 16px;
+}
+
+
+
+.lab {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    padding: 5px 0;
+
+}
+.lab input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.knp1{
+    border:1px solid green;
+    margin: 10px 50px;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #34eb33;
+    border-radius: 15px;
+}
+.labelInput textarea{
+    border: 1px solid;
+    border-radius: 5px;
+}
+.container h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.container p{
+    text-align: center;
+    margin-top: 10px;
+}
+.column input{
+    display:flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 5px 0;
+    margin: 3px;
+    text-align: center;
+}
+.column{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn1 {
+    display: flex;
+    border:1px solid;
+    margin: 0 140px;
+    padding: 10px 20px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #d1e7d1;
+    border-radius: 20px;
+}
+
+span{
+    color: #ef6060;
+}
+
+.klik{
+    color:#ef6060;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .navMenu a{
+        font-size: 1.3rem;
+        display: flex;
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+    .navMenu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #FFF;
+        width: 100%;
+        height: 70px;
+        padding: 0 20px;
+
+    }
+
+    .footer{
+        grid-area: footer;
+        position: fixed;
+        bottom: 0;
+        padding: 5px 10px;
+    }
+    .footer ul{
+        list-style-type: none;
+        font-size: 0.8rem;
+    }
+    .footer li{
+        list-style-type: none;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding-left: 0.8rem;
+    }
+    footer i{
+        margin-right: 0.3rem;
+    }
+    .footerSocial i{
+        color: #FFFFFF;
+        padding-right: 0.5rem;
+    }
+    .footerSocial{
+        padding-right: 0.8rem;
+    }
+
+    .logo h1{
+        margin-right: 30px;
+        font-size: 2.5rem;
+
+    }
+    .logo img{
+        display:flex;
+        margin-left: 10px;
+    }
+    .børn{
+        display: flex;
+        width: 40%;
+        height: 50%;
+        align-items: center;
+    }
+    .far{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+    }
+    .container h2{
+        font-size: 1.6rem;
+    }
+    .container p{
+        font-size: 1.3rem;
+    }
+
+    .btn1 {
+        display: flex;
+        border:1px solid;
+        padding: 10px 20px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        background-color: #d1e7d1;
+        border-radius:20px;
+        flex-direction: column;
+    }
+
+    .klik{
+        color:#ef6060;
+    }
+
+
+}
+
+@media screen and(min-width: 1200px) {
+    .navMenu a{
+        font-size: 2rem;
+        display: flex;
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+    .navMenu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #FFF;
+        width: 100%;
+        height: 70px;
+        padding: 0 20px;
+
+    }
+
+    .footer{
+        grid-area: footer;
+        position: fixed;
+        bottom: 0;
+        padding: 5px 10px;
+    }
+    .footer ul{
+        list-style-type: none;
+        font-size: 0.8rem;
+    }
+    .footer li{
+        list-style-type: none;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding-left: 0.8rem;
+        color: white;
+    }
+    footer i{
+        margin-right: 0.3rem;
+    }
+    .footerSocial i{
+        color: #FFFFFF;
+        padding-right: 0.5rem;
+    }
+    .footerSocial{
+        padding-right: 0.8rem;
+    }
+    .container h2{
+        font-size: 1.8rem;
+    }
+    .btn1 {
+        border:1px solid;
+        margin: 0 330px;
+        padding: 10px 20px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        background-color: #f7f8f7;
+        border-radius: 20px;
+    }
+
+    .børn{
+        display: flex;
+        width: 40%;
+        height: 50%;
+        align-items: center;
+
+    }
+    .far{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+    }
+
+.skrift{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+}
